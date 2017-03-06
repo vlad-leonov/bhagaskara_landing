@@ -1,0 +1,83 @@
+// Usage
+// font-family: 'LatoHairline', sans-serif;
+// font-family: 'LatoLight', sans-serif;
+// font-family: 'LatoBold', sans-serif;
+// font-family: 'LatoRegular', sans-serif;
+// font-family: 'ExistenceLight', sans-serif;
+// font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+// font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+// font-family: 'HelveticaNeueLTStd77Bold', sans-serif;
+// font-family: 'TitilliumWeb', sans-serif;
+
+// Lato Hairline
+@font-face {
+  font-family: 'LatoHairline';
+  src: url('#{$fonts}/Lato-Hairline.eot');
+  src:url('#{$fonts}/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts}/Lato-Hairline.woff2') format('woff2'),
+  url('#{$fonts}/Lato-Hairline.woff') format('woff'),
+  url( '#{$fonts}/Lato-Hairline.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+// Lato Light
+@font-face {
+  font-family: 'LatoLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/Lato-Light.ttf') format('truetype');
+}
+
+// Lato Bold
+@font-face {
+  font-family: 'LatoBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/Lato-Bold.ttf') format('truetype');
+}
+
+// Lato Regular
+@font-face {
+  font-family: 'LatoRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/Lato-Regular.ttf') format('truetype');
+}
+
+// Existence Light
+@font-face {
+    font-family: 'ExistenceLight';
+    src: url('#{$fonts}/Existence-Light-webfont.eot');
+    src: url('#{$fonts}/Existence-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fonts}/Existence-Light-webfont.woff') format('woff'),
+         url('#{$fonts}/Existence-Light-webfont.ttf') format('truetype'),
+         url('#{$fonts}/Existence-Light-webfont.svg#existencelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Helvetica Neue LT Std 45 Light
+@font-face {
+  font-family: 'HelveticaNeueLTStd45Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/HelveticaNeueLTStd Lt.woff') format('woff');
+}
+
+// Helvetica Neue LT Std 77 Bold
+@font-face {
+  font-family: 'HelveticaNeueLTStd77Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/Helvetica-Neue-LT-Std-77-Bold-Condensed.ttf') format('truetype');
+}
+
+// Titillium Web light
+@font-face {
+  font-family: 'TitilliumWeb';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fonts}/TitilliumWeb-Light.ttf') format('truetype');
+}

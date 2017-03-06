@@ -1,0 +1,33 @@
+.text-dark {
+  color: $text-dark-color;
+}
+.text-light,
+.text-light:active {
+  color: $text-light-color;
+}
+.text-semi-dark {
+  color: $text-semi-dark-color;
+}
+.text-semi-light {
+  color: $text-semi-light-color;
+}
+.text-colored {
+  color: $primary-color;
+}
+
+%capitalize,
+.capitalized {
+  &:first-letter {
+    text-transform: capitalize;
+  }
+}
+
+a {
+  color: CurrentColor;
+  &:hover,
+  &:visited {
+    text-decoration: none;
+    color: CurrentColor;
+
+  }
+}

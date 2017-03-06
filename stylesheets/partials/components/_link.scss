@@ -1,0 +1,14 @@
+.link {
+  color: currentcolor;
+  a,
+  & *,
+  &:link,
+  &:active,
+  &:visited,
+  &:hover {
+    outline: none;
+    color: currentcolor;
+    text-decoration: none;
+
+  }
+}
