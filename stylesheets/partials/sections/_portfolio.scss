@@ -1,0 +1,84 @@
+.portfolio-section {
+  padding: 0 0 10vh;
+
+  .container {
+    margin-top: -3rem;
+    padding-top: 7rem;
+    background-color: $primary-bg-color;
+  }
+
+  .tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .filter {
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    margin: .5rem;
+    text-transform: uppercase;
+  }
+
+  .projects-list {
+    // @include media-breakpoint-up(lg) {
+    //   margin: 2rem;
+    // }
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-item {
+    text-align: center;
+    padding: 0 .5rem;
+    margin-bottom: 1.5rem;
+    &:hover,
+    &:focus {
+      .picture-view-overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  .project-picture {
+    position: relative;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .picture-view-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: $dark-overlay-color;
+    transition: opacity .5s ease;
+
+    .overlay-icon {
+      width: 45%;
+    }
+  }
+
+  .project-title {
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    color: $text-dark-color;
+    font-size: 1.5rem;
+  }
+  .project-tags {
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    color: $text-semi-light-color;
+    font-size: 1.1rem;
+  }
+
+  .portfolio-action {
+    text-align: center;
+  }
+}

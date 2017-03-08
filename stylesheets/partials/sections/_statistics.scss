@@ -1,0 +1,35 @@
+.statistics-section {
+  padding: 10vh 0 5vh;
+  background-color: $secondary-bg-color;
+
+  .container {
+    padding: 0 5rem;
+  }
+
+  .counters-list {
+    padding-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .counter-item {
+    min-width: 14rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    @include media-breakpoint-down(sm) {
+    }
+  }
+
+  .counter-value {
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    color: $text-dark-color;
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .counter-text {
+    color: $text-semi-dark-color;
+    @extend .capitalized;
+  }
+}

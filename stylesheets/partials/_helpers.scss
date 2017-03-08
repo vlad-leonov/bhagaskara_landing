@@ -15,19 +15,21 @@
   color: $primary-color;
 }
 
-%capitalize,
+%capitalize-all {
+  *:first-letter {
+    text-transform: capitalize;
+  }
+}
 .capitalized {
   &:first-letter {
     text-transform: capitalize;
   }
 }
 
-a {
-  color: CurrentColor;
-  &:hover,
-  &:visited {
-    text-decoration: none;
-    color: CurrentColor;
+.hidden {
+  display: none;
+}
 
-  }
+.fixed {
+  position: fixed;
 }

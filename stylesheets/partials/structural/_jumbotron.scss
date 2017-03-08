@@ -1,0 +1,125 @@
+.jumbotron-main {
+  background: url('#{$images}/jumbotron-bg.png'), $jumbotron-main-bg-color;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 8vh 0;
+  margin-bottom: 0;
+  display: flex;
+
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .jumbotron-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .logo-text{
+    max-width: 100%;
+    margin-bottom: 8vh;
+    font-family: 'ExistenceLight', sans-serif;
+    @include media-breakpoint-only(xs) {
+      font-size: 15vw;
+    }
+    @include media-breakpoint-up(sm) {
+      font-size: 5rem;
+    }
+  }
+
+  .jumbotron-text {
+    font-family: 'LatoHairline', sans-serif;
+    margin-bottom: 10vh;
+    max-width: 60rem;
+    h1 {
+      margin-bottom: 3vh;
+    }
+  }
+
+  .section-links {
+    flex-grow: 1;
+    @include media-breakpoint-up(lg) {
+      max-height: 24rem;
+    }
+  }
+
+  .center {
+    @include media-breakpoint-only(sm) {
+      width: 100%;
+      margin: -2rem 0;
+    }
+    @include media-breakpoint-only(md) {
+      width: 100%;
+      margin: -2rem 0;
+      max-width: 720px;
+    }
+  }
+
+  .nav-item {
+    width: 10rem;
+    height: 11rem;
+    margin: .5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('#{$images}/hex_shape_large_white_bordered.svg');
+    &:hover {
+      background-image: url('#{$images}/hex_shape_large_main_filled.svg');
+    }
+  }
+
+  .nav-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @extend .link;
+  }
+
+  .link-icon {
+    margin-bottom: 1rem;
+    width: 40%;
+  }
+
+  .link-text {
+    font-family: 'LatoRegular', sans-serif;
+    font-size: 1.2em;
+  }
+
+  .scroller {
+    position: relative;
+    bottom: 0;
+    width: 5rem;
+    height: 5.5rem;
+    margin-top: .5rem;
+    @include media-breakpoint-up(sm){
+      margin-top: -2rem;
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: url('#{$images}/hex_shape_medium_white_bordered.svg');
+    &:hover {
+      background-image: url('#{$images}/hex_shape_large_main_filled.svg');
+    }
+
+    .scroller-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    // TODO: arrow animation
+    .scroller-arrow {
+      width: 30%;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+%input-common {
+  font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+  border: 0;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-large {
+  border-style: solid;
+  border-width: 1px;
+  padding: 1rem 2rem .8rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  @extend %input-common;
+}
+
+.input-default {
+  border-color: $text-semi-light-color;
+  background-color: $text-light-color;
+  color: $text-dark-color;
+  @include placeholder {
+    color: $text-dark-color;
+  }
+  &:focus {
+    border-color: $primary-dark-color;
+    @include placeholder {
+      color: $secondary-dark-color;
+    }
+  }
+  &:disabled {
+    border-color: $secondary-dark-color;
+    background-color: $text-light-color;
+    color: $secondary-dark-color;
+    @include placeholder {
+      color: $secondary-dark-color;
+    }
+  }
+}

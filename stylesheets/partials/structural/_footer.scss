@@ -1,0 +1,11 @@
+.footer-main {
+  padding: 4vh 0 6vh;
+  text-align: center;
+
+  .logo-link {
+    @extend .nav-link;
+  }
+  .logo-text {
+    font-family: 'ExistenceLight', sans-serif;
+  }
+}

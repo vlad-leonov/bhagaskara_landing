@@ -1,7 +1,64 @@
 body {
   font-size: 16px;
+  word-wrap: break-word;
+  position: relative;
 }
 
 .content {
-  background: $secondary-bg-color;
+  background: $primary-bg-color;
 }
+
+%quotes {
+  content: '';
+  width: .5em;
+  height: .5em;
+  position: absolute;
+  // border-color: $primary-color;
+  // border-width: 1px;
+}
+
+.section-heading {
+  text-align: center;
+  padding: 0 2rem 6rem;
+
+  .heading-text {
+    margin: auto;
+    display: table;
+    width: auto;
+    position: relative;
+    font-family: 'ExistenceLight', sans-serif;
+
+    @media (max-width: 399px) {
+      font-size: 15vw;
+    }
+    @media (min-width: 400px) and (max-width: 575px) {
+      font-size: 10vw;
+    }
+    @include media-breakpoint-up(sm) {
+      font-size: 3em;
+    }
+    @extend .text-capitalize;
+
+    &::before {
+      bottom: -.5em;
+      left: -.6em;
+      @extend %quotes;
+      border-bottom: 1px solid $primary-color;
+      border-left: 1px solid $primary-color;
+    }
+    &::after {
+      top: -.4em;
+      right: -.6em;
+      @extend %quotes;
+      border-top: 1px solid $primary-color;
+      border-right: 1px solid $primary-color;
+    }
+  }
+}
+
+// .section-content {
+//   @include media-breakpoint-down(md) {
+//     padding-left: 2rem;
+//     padding-right: 2rem;
+//   }
+// }

@@ -1,0 +1,39 @@
+.skills-section {
+  padding: 10vh 0;
+
+  .section-content {
+
+  }
+  .skills-list {
+    padding: 4rem 0;
+    max-width: 55rem;
+    margin: auto;
+  }
+  .skill-item {
+    padding: 2rem;
+  }
+  .skill-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .skill-title {
+    font-family: 'HelveticaNeueLTStd77Bold', sans-serif;
+    color: $text-dark-color;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  .skill-progress {
+    .skill-counter {
+      font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+      font-size: 1.5rem;
+    }
+    #uiUxProgress,
+    #graphicDesignProgress,
+    #htmlCssProgress,
+    #webDesignProgress,
+    .progressbar {
+      height: .9rem;
+    }
+  }
+}

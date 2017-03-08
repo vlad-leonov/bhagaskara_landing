@@ -1,0 +1,48 @@
+.testimonials-section {
+  padding: 0 0 6rem;
+  background-color: $secondary-bg-color;
+
+  .section-content {
+    padding: 2rem 0;
+  }
+  .testimonials-list {
+  }
+  .testimonial-item {
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+  .tst-picture {
+    max-width: 11rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    img {
+      width: 11rem;
+      height: 11rem;
+      border-radius: 50%;
+    }
+  }
+  .tst-text {
+    margin: auto;
+    max-width: 55rem;
+    text-align: center;
+  }
+  .tst-quote {
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    font-size: 2rem;
+    color: $text-darken-color;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  .tst-author {
+    margin-bottom: 1.8rem;
+    font-family: 'HelveticaNeueLTStd77Bold', sans-serif;
+    font-size: 1.3rem;
+    color: $text-semi-light-color;
+  }
+
+  .tst-slider-indicators {
+    text-align: center;
+  }
+}

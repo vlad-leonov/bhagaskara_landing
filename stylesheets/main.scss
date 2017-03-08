@@ -1,13 +1,30 @@
 @import 'vendor/twbs/bootstrap';
+@import 'vendor/slick/slick';
+// @import 'vendor/slick/slick-theme';
 
 @import 'modules/colors';
 @import 'modules/variables';
+@import 'modules/mixins';
 
 @import 'partials/components/link';
 @import 'partials/components/button';
+@import 'partials/components/input';
+@import 'partials/components/slick_dots';
 
 @import 'partials/typography';
 @import 'partials/helpers';
 @import 'partials/style';
 
-@import "partials/structural/header"
+@import "partials/structural/jumbotron";
+@import "partials/structural/header";
+@import "partials/structural/banner";
+@import "partials/structural/footer";
+
+@import "partials/sections/features";
+@import "partials/sections/about";
+@import "partials/sections/team";
+@import "partials/sections/skills";
+@import "partials/sections/statistics";
+@import "partials/sections/testimonials";
+@import "partials/sections/portfolio";
+@import "partials/sections/contact";

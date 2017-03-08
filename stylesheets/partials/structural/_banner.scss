@@ -1,0 +1,33 @@
+.banner {
+  // min-height: 35rem;
+  background: url('#{$images}/banner_bg.png'), $banner-bg-color;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 13vh 5vw;
+
+  .banner-inner {
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner-logo {
+    width: 10rem;
+    height: 11rem;
+    margin: 0 auto 3vh;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('#{$images}/hex_shape_large_white_bordered.svg');
+    .icon {
+      margin: auto;
+      height: 33%;
+    }
+  }
+  .banner-text {
+    color: $text-light-color;
+    font-family: 'LatoLight', sans-serif;
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,36 @@
+@mixin placeholder {
+  // Supported Styles
+  // The pseudo element supports styling of these properties:
+  //
+  // font properties
+  // color
+  // background properties
+  // word-spacing
+  // letter-spacing
+  // text-decoration
+  // vertical-align
+  // text-transform
+  // line-height
+  // text-indent
+  // opacity
+
+  &::-webkit-input-placeholder {
+    @content; // Chrome/Opera/Safari
+  }
+  &:-moz-placeholder {
+    @content; // Firefox 18-
+  }
+  &::-moz-placeholder {
+    @content; // Firefox 19+
+  }
+  &:-ms-input-placeholder {
+    @content; // IE 10+
+  }
+  &::-ms-input-placeholder {
+    @content; // Edge
+  }
+  // NOTE: Maybe not needed
+  // &:placeholder-shown {
+  //  @content; // Standard one last!
+  // }
+}

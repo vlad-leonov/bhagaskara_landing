@@ -1,15 +1,20 @@
 $primary-color:                #9f449b;
+$primary-dark-color:           #6b2e68;
+$secondary-light-color:        #f0f0f0;
 $secondary-color:              #d1d5d7;
+$secondary-dark-color:         #cdcdcd;
 
+$text-light-color:             #FFFFFF;
 $text-semi-light-color:        #777777;
 $text-semi-dark-color:         #676767;
+$text-darken-color:            #4b4b4b;
 $text-dark-color:              #222222;
-$text-light-color:             #FFFFFF;
 
 $primary-bg-color:             #FFFFFF;
 $secondary-bg-color:           #EEEEEE;
 $jumbotron-main-bg-color:      #433660;
-
+$banner-bg-color:              #82649E;
+$dark-overlay-color:           rgba(40, 40, 40, .4);
 
 
 
@@ -20,3 +25,9 @@ $jumbotron-main-bg-color:      #433660;
 // #433660, #392C4F,
 // #31284F, #31284E,
 // #2F284C, #2F2749
+
+// Banner bg palette
+// #E0E0E0, #82649E,
+// #67467C, #5E3E72,
+// #56356A, #513165,
+// #513066, #4F2F62

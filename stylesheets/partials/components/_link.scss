@@ -1,3 +1,15 @@
+%link-common {
+  a,
+  & *,
+  &:link,
+  &:active,
+  &:visited,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
 .link {
   color: currentcolor;
   a,
@@ -6,9 +18,22 @@
   &:active,
   &:visited,
   &:hover {
-    outline: none;
     color: currentcolor;
-    text-decoration: none;
-
   }
+  @extend %link-common;
+}
+
+.link-default {
+  color: $text-dark-color;
+  a,
+  & *,
+  &:link,
+  &:visited {
+    color: $text-dark-color;
+  }
+  &:active,
+  &:hover {
+    color: $primary-color;
+  }
+  @extend %link-common;
 }

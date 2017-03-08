@@ -1,0 +1,78 @@
+%button-common {
+  position: relative;
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  border-radius: .3rem;
+  font-family: 'LatoLight', sans-serif;
+  text-align: center;
+  &:link,
+  &:focus,
+  &:active,
+  &:visited,
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+  @extend .capitalized;
+}
+
+.button-large {
+  min-width: 12rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  @extend %button-common;
+}
+
+.button-small {
+  padding: .4rem .9rem .1rem;
+  font-size: .95rem;
+  @extend %button-common;
+}
+
+%button-bordered {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.button-colored {
+  color: $text-light-color;
+  background-color: $primary-color;
+  box-shadow: 0px 5px 0px 0px $primary-dark-color;
+
+  &:active {
+    top: 5px;
+    box-shadow: 0px 5px 0px 0px $primary-color;
+    box-shadow: none;
+  }
+  &:link,
+  &:active,
+  &:visited,
+  &:hover {
+    color: $text-light-color;
+  }
+}
+
+
+.button-bordered-default {
+  color: $text-dark-color;
+  border-color: $text-dark-color;
+  background-color: $primary-bg-color;
+  &.active,
+  &:hover,
+  &:active {
+    color: $text-light-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  &:link,
+  &:visited {
+    color: $text-dark-color;
+    border-color: $text-dark-color;
+    background-color: $primary-bg-color;
+  }
+  @extend %button-bordered;
+}

@@ -1,0 +1,93 @@
+.team-section {
+  padding: 10vh 0 5vh;
+
+  .section-content {
+
+  }
+  .team-carousel-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .carousel-prev,
+  .carousel-next {
+    width: 4rem;
+    height: 4rem;
+    margin: .15rem;
+    display: flex;
+    background: url('#{$images}/hex_shape_small_main_bordered.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .arrow-icon {
+      height: 33%;
+      margin: auto;
+    }
+  }
+  .members-list {
+    padding: 4rem 0 0;
+    .slick-track {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .member {
+    text-align: center;
+    padding: 0 1rem;
+    min-width: 20rem;
+  }
+  .member-avatar {
+    margin-bottom: 4rem;
+    img {
+      margin: auto;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+    }
+  }
+  .member-text {
+    margin: auto;
+  }
+  .member-name {
+    font-family: 'LatoBold', sans-serif;
+    font-size: 1.5rem;
+    color: $text-darken-color;
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+  }
+  .member-position {
+    font-family: 'LatoRegular', sans-serif;
+    color: $text-semi-light-color;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .member-socials {
+    .social-link {
+      display: inline-block;
+      width: 2.6rem;
+      height: 2.6rem;
+      margin: 0 .7rem;
+      border-radius: 50%;
+      border: 1px solid $secondary-dark-color;
+      text-align: center;
+      overflow: hidden;
+      &:hover {
+        border-color: $primary-color;
+        .social-icon {
+          color: $primary-color;
+        }
+      }
+    }
+    .social-icon {
+      font-family: 'TitilliumWeb', sans-serif;
+      font-size: 1.3rem;
+      line-height: 1.9;
+      height: 100%;
+      color: $text-dark-color;
+    }
+    // HACK
+    .google-icon {
+      line-height: normal;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+$dot-size: 12px;
+
+.slick-dots {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  // width: 100%;
+
+  li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    height: $dot-size;
+    width: $dot-size;
+
+    button {
+      border: 0;
+      position: relative;
+      background: transparent;
+      display: block;
+      height: $dot-size;
+      width: $dot-size;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: calc(#{$dot-size} / 4);
+      cursor: pointer;
+
+      &:hover, &:focus {
+        outline: none;
+        &::before {
+          // opacity: .7;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: $dot-size;
+        width: $dot-size;
+        border: 1px solid $text-semi-light-color;
+        border-radius: 50%;
+        // opacity: 1;
+      }
+    }
+    &.slick-active button::before {
+      background-color: $text-semi-light-color;
+      // opacity: 1;
+    }
+  }
+}

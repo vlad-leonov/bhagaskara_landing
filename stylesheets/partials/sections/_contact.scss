@@ -1,0 +1,74 @@
+.contact-section {
+  padding: 10vh 0;
+
+  .section-content {
+    padding-top: 3rem;
+  }
+
+  .contact-form {
+    padding-left: 2rem;
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 4em;
+    }
+  }
+  .contact-data {
+    padding-left: 2rem;
+  }
+  .contact-text {
+    font-family: 'HelveticaNeueLTStd45Light', sans-serif;
+    color: $text-darken-color;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-phones,
+  .contact-address {
+    font-family: 'HelveticaNeueLTStd77Bold', sans-serif;
+    color: $text-dark-color;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .phone-number {
+    margin-bottom: 0;
+  }
+
+  .contact-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include media-breakpoint-up(sm) {
+      justify-content: flex-start;
+    }
+  }
+
+  .social-link {
+    width: 5rem;
+    min-width: 5rem;
+    height: 5rem;
+    margin: 1rem 2rem 1rem 0;
+    border-radius: 50%;
+    border: 1px solid $secondary-dark-color;
+    text-align: center;
+    &:hover {
+      border-color: $primary-color;
+      .social-icon {
+        color: $primary-color;
+      }
+    }
+  }
+  .social-icon {
+    font-family: 'TitilliumWeb', sans-serif;
+    font-size: 3rem;
+    line-height: 1.6;
+    color: $text-dark-color;
+  }
+  // HACK
+  .google-icon {
+    line-height: 1.2;
+  }
+}
